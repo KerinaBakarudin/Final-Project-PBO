@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="b11_hospitalityplus.PesananController">
+   <children>
+      <Label layoutX="225.0" layoutY="75.0" prefHeight="35.0" prefWidth="199.0" text="Konfirmasi Pemesanan" textAlignment="CENTER" textFill="#003b95">
+         <font>
+            <Font name="NewsGoth BT Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnkonfirmasi" layoutX="255.0" layoutY="491.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="137.0" style="-fx-background-color: #003B95;" text="Konfirmasi" textFill="WHITE" />
+      <TableView fx:id="tblPemesanan" layoutX="25.0" layoutY="232.0" prefHeight="200.0" prefWidth="599.0">
+         <columns>
+            <TableColumn fx:id="colidpesan" prefWidth="75.0" text="id_pemesanan" />
+            <TableColumn fx:id="colNama" prefWidth="75.0" text="Nama" />
+            <TableColumn fx:id="colTelepon" prefWidth="75.0" text="No_Telepon" />
+            <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="colTamu" prefWidth="75.0" text="Jumlah_Tamu" />
+            <TableColumn fx:id="colCheckin" prefWidth="75.0" text="Check_in" />
+            <TableColumn fx:id="colCheckout" prefWidth="75.0" text="Check_out" />
+            <TableColumn fx:id="colBooking_id" prefWidth="75.0" text="Booking_id" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
